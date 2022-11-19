@@ -18,6 +18,10 @@
  
   
 }
+#title button{
+  color: #fff;
+  border: none;
+}
 
 #loginButton{
   color: #fff;
