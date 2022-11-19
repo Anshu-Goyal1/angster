@@ -60,9 +60,9 @@ function Header() {
          {/* Navbar  */}
 
         <nav className="navbar navbar-expand-lg navbar-dark">
-          <a className="navbar-brand" href="#">
+          <button className="navbar-brand" href="#">
             <img src="./logo.jpg" alt="Angster" width="240" height="90" className="d-inline-block align-text-top" />
-          </a>
+          </button>
           <button
             className="navbar-toggler"
             type="button"
@@ -81,7 +81,7 @@ function Header() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link">About Us</a>
+                <button className="nav-link">About Us</button>
               </li>
             </ul>
           </div>
