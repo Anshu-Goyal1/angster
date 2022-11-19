@@ -1,23 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Header";
+import Content from "./Content";
+import Info from "./Info";
+import Footer from "./Footer";
+
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+window.userWalletAddress = null;
+const loginButton = document.getElementById("loginButton");
+const userWallet = document.getElementById("userWallet");
+
+function toggleButton() {
+  if (!window.ethereum) {
+    loginButton.innerText = "MetaMask is not installed";
+    loginButton.classList.remove("bg-purple-500", "text-white");
+    loginButton.classList.add("bg-gray-500", "text-gray-100", "cursor-not-allowed");
+    return false;
+  }
+
+  loginButton.addEventListener("click", loginWithMetaMask);
+}
+
+async function loginWithMetaMask() {
+  const accounts = await window.ethereum.request({ method: "eth_requestAccounts" }).catch((e) => {
+    console.error(e.message);
+    return;
+  });
+  if (!accounts) {
+    return;
+  }
+
+  window.userWalletAddress = accounts[0];
+  userWallet.innerText = window.userWalletAddress;
+  loginButton.innerText = "Sign out of MetaMask";
+
+  loginButton.removeEventListener("click", loginWithMetaMask);
+  setTimeout(() => {
+    loginButton.addEventListener("click", signOutOfMetaMask);
+  }, 200);
+}
+
+function signOutOfMetaMask() {
+  window.userWalletAddress = null;
+  userWallet.innerText = "";
+  loginButton.innerText = "Sign in with MetaMask";
+
+  loginButton.removeEventListener("click", signOutOfMetaMask);
+  setTimeout(() => {
+    loginButton.addEventListener("click", loginWithMetaMask);
+  }, 200);
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  toggleButton();
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Content />
+      <Info />
+      <Footer />
     </div>
   );
 }
