@@ -5,22 +5,22 @@ function Explore() {
   return (
     <div className="cards">
       <div className="card border-dark mb-3" style={{ width: "18rem" }}>
-        <img src="./scout.jpg" class="card-img-top" alt="..." height="250px" width="250px" />
+        <img src="./scout.jpg" className="card-img-top" alt="..." height="250px" width="250px" />
 
         <div className="card-footer bg-dark border-success">Scout</div>
       </div>
       <div className="card border-dark mb-3" style={{ width: "18rem" }}>
-        <img src="./mortal.jpg" class="card-img-top" alt="..." height="250px" width="240px" />
+        <img src="./mortal.jpg" className="card-img-top" alt="..." height="250px" width="240px" />
 
         <div className="card-footer bg-dark border-success">Mortal</div>
       </div>
       <div className="card border-dark mb-3" style={{ width: "18rem" }}>
-        <img src="./pwediepie.jpg" class="card-img-top" alt="..." height="250px" width="240px" />
+        <img src="./pwediepie.jpg" className="card-img-top" alt="..." height="250px" width="240px" />
 
         <div className="card-footer bg-dark border-success">Pewdiepie</div>
       </div>
       <div className="card border-dark mb-3" style={{ width: "18rem" }}>
-        <img src="./panda.jpg" class="card-img-top" alt="..." height="250px" width="240px" />
+        <img src="./panda.jpg" className="card-img-top" alt="..." height="250px" width="240px" />
 
         <div className="card-footer bg-dark border-success">Panda</div>
       </div>

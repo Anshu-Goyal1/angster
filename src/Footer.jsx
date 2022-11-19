@@ -10,8 +10,8 @@ function Footer() {
           className="one"><h2>Angster</h2>
 
           <div >
-          <i class="fa-brands fa-twitter fa-2x"></i>
-          <i class="fa-brands fa-discord fa-2x"></i>
+          <i className="fa-brands fa-twitter fa-2x"></i>
+          <i className="fa-brands fa-discord fa-2x"></i>
           </div>
           </div>
           <div className="two">
