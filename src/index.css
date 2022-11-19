@@ -1,8 +1,5 @@
 html{
-  @font-face {
-    font-family: "Camber" !important;;
-    src: local("Camber") url(Camber W04 Bold.ttf) format("ttf");
-  }
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
