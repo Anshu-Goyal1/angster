@@ -1,0 +1,11 @@
+*{font-family: 'Poppins', sans-serif !important;}
+html {
+  text-align: center;
+  font:500 1rem/1.25;
+  font-family: 'Poppins', sans-serif;
+
+  /* font: 500 1rem/1.25 sohne, Helvetica, Arial, sans-serif; */
+
+  color: #fff;
+  background-color: black;
+}
