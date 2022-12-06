@@ -12,7 +12,7 @@ function Info() {
             <p>
               Angsters allow to become stakeholders in their favorite creators by holding their limited and exclusive
               tokens.Which later serve as a fan access to vote on decisions, gain access to exclusive contents and
-              rewards
+              rewards.
             </p>
           </div>
           <div className="info_first">
@@ -21,7 +21,7 @@ function Info() {
             <p>
               Angsters allow to become stakeholders in their favorite creators by holding their limited and exclusive
               tokens.Which later serve as a fan access to vote on decisions, gain access to exclusive contents and
-              rewards
+              rewards.
             </p>
           </div>
         </div>
